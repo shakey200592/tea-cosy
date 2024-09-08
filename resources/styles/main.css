@@ -1,0 +1,181 @@
+/* Global Styles */
+/* Reset margin, padding, and box-sizing for all elements to ensure consistent styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Includes padding and border in element's total width and height */
+}
+
+body {
+    background-color: #000000; /* Black background color */
+    font-family: Helvetica, Arial, sans-serif; /* Font stack for typography */
+    font-size: 22px; /* Base font size */
+    color: seashell; /* Light color for text */
+    opacity: 0.9; /* Slight transparency */
+    width: 100%; /* Full width */
+    text-align: center; /* Center-align text */
+}
+
+/* Header Styling */
+/* Styles for the header, which contains logo and navigation */
+header {
+    display: flex; /* Flexbox for layout */
+    justify-content: space-between; /* Space between logo and nav */
+    align-items: center; /* Center items vertically */
+    position: fixed; /* Fixed positioning at the top */
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 69px; /* Fixed height */
+    margin: 0 10px; /* Horizontal margin */
+    border-bottom: 1px solid seashell; /* Bottom border */
+    background-color: #000000; /* Black background color */
+    z-index: 100; /* Ensure header stays on top */
+}
+
+#logo-img {
+    height: 50px; /* Set height of logo */
+}
+
+nav ul {
+    display: flex; /* Flexbox for navigation list items */
+    list-style: none; /* Remove default list styling */
+}
+
+.nav-link {
+    padding: 10px; /* Space around navigation links */
+}
+
+a {
+    text-decoration: underline; /* Underline text */
+    color: seashell; /* Link color */
+}
+
+/* Main Content Styling */
+/* Main section styling including padding to accommodate the fixed header */
+main {
+    width: 1200px; /* Set maximum width */
+    padding-top: 69px; /* Offset for fixed header */
+    margin: 0 auto; /* Center align */
+    position: relative; /* Context for absolutely positioned elements */
+}
+
+/* Mission Section */
+/* Styles specific to the mission section */
+#mission-section {
+    position: relative; /* Context for absolutely positioned elements inside */
+}
+
+#mission-img {
+    height: 700px; /* Fixed height for the mission image */
+    width: 100%; /* Full width */
+    display: block; /* Remove default inline spacing */
+}
+
+.hero-text {
+    display: flex; /* Flexbox for centering text */
+    flex-direction: column; /* Stack text vertically */
+    align-items: center; /* Center text horizontally */
+    justify-content: center; /* Center text vertically */
+    position: absolute; /* Absolute positioning within the section */
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto; /* Center horizontally and vertically */
+    text-align: center; /* Center-align text */
+    background-color: rgba(0,0,0,0.5); /* Semi-transparent black background */
+    padding: 20px; /* Space inside the hero text container */
+}
+
+/* Tea of the Month Section */
+/* Styles for the tea of the month section */
+.tea-of-the-month {
+    width: 100%; /* Full width */
+    max-width: 1000px; /* Maximum width */
+    margin: 30px auto; /* Vertical margin and center align */
+}
+
+.tea-of-the-month h2,
+.tea-of-the-month h4 {
+    margin-bottom: 30px; /* Space below heading text */
+}
+
+.tea-gallery {
+    display: flex; /* Flexbox for gallery layout */
+    width: 100%; /* Full width */
+    flex-wrap: wrap; /* Wrap images to the next line */
+    gap: 30px; /* Space between images */
+    justify-content: center; /* Center-align images */
+}
+
+.tea-img-container img {
+    max-width: 300px; /* Limit maximum width */
+    max-height: 200px; /* Limit maximum height */
+}
+
+/* Locations Section */
+/* Styles for the locations section */
+.locations-section {
+    position: relative; /* Context for absolutely positioned elements inside */
+    display: flex; /* Flexbox for vertical and horizontal centering */
+    flex-direction: column; /* Stack elements vertically */
+    justify-content: center; /* Center elements vertically */
+    align-items: center; /* Center elements horizontally */
+    height: 500px; /* Fixed height for the section */
+    text-align: center; /* Center-align text */
+}
+
+#locations-heading {
+    color: seashell; /* Color for heading text */
+    margin-bottom: 15px; /* Space below heading */
+    z-index: 1; /* Ensure heading is above other content */
+}
+
+.location-boxes-container {
+    display: flex; /* Flexbox for layout */
+    justify-content: center; /* Center-align boxes */
+    align-items: center; /* Center-align boxes vertically */
+    gap: 20px; /* Space between location boxes */
+    z-index: 1; /* Ensure boxes are above background image */
+}
+
+.location-box {
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+    padding: 20px; /* Space inside the location box */
+    color: seashell; /* Text color */
+    text-align: center; /* Center-align text */
+    width: 300px; /* Fixed width */
+}
+
+.location-box h3,
+.location-box h4 {
+    margin-bottom: 20px; /* Space below headings in the location box */
+}
+
+#locations-img {
+    position: absolute; /* Absolute positioning to cover the section */
+    top: 0;
+    left: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    z-index: -1; /* Ensure image is behind other content */
+    object-fit: cover; /* Cover the section without distortion */
+}
+
+/* Contact Section */
+/* Styles for the contact section */
+.contact {
+    margin: 30px auto; /* Vertical margin and center align */
+    text-align: center; /* Center-align text */
+    height: 200px; /* Fixed height */
+}
+
+.contact h2, .contact h5 {
+    margin: 50px; /* Space around headings */
+}
+
+footer {
+    text-align: left; /* Align footer text to the left */
+    margin: 20px; /* Margin around footer */
+}
